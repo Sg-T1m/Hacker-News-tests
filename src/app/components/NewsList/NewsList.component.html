@@ -1,0 +1,8 @@
+<p 
+*ngIf="Loading"
+class="LoadingProcess">Loading</p>
+<div class="Main">
+    <app-News  *ngFor="let NewsId of NewsList" [NewsId]="NewsId"> </app-News>
+</div>
+<button (click)="GetNewsList()">Обновить список новостей</button>
+

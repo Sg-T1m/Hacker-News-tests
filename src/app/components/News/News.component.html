@@ -1,0 +1,19 @@
+<div
+  class="NewsContainer"
+  [routerLink]="['profile', id]"
+  [queryParams]="{
+    by: NewsData?.by,
+    descendants: NewsData?.descendants,
+    id: NewsData?.id,
+    kids: NewsData?.kids,
+    title: NewsData?.title,
+    url: NewsData?.url,
+    time: NewsData?.time
+  }"
+>
+  <p>{{ NewsData?.title }}</p>
+  <p> счёт: {{ NewsData?.score }}</p>
+  <p>Автор: {{ NewsData?.by }}</p>
+  <p>Время: {{ NewsData?.time }}</p>
+  <p>{{NewsData?.descendants}}</p>
+</div>

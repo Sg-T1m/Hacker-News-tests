@@ -1,0 +1,10 @@
+<div class="MoreNews">
+<p> Время: {{times}} </p>
+<p>Заголовок: {{NewsContent?.title}}</p>
+<p>количество комментариев: {{NewsContent?.descendants}}</p>
+<p>Автор: {{NewsContent?.by}}</p>
+<p>Cсылка на статью: {{NewsContent?.url}}</p>
+
+
+<app-comment *ngFor="let comment of arraycomment" [commentData]="comment"></app-comment>
+</div>

@@ -1,0 +1,11 @@
+<div class="cometns">
+  <p class="NickAutor"> {{commentData?.by}} </p>
+  <p class="comment"> {{commentData?.text}} </p>
+<div>
+  <button *ngIf="MoreComments" (click)="getComments(commentData?.kids)">dfddd</button>
+ <div class="coment">
+  <app-commentSums *ngFor=" let subComment of allkids" [Commetn]="subComment"></app-commentSums>
+ </div>
+</div>
+
+</div>

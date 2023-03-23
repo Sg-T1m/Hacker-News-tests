@@ -1,0 +1,10 @@
+.NewsContainer{
+    margin: 0 auto;
+    width: 400px;
+    border: 1px solid white;
+    margin-top: 30px;
+    padding: 10px;
+}
+.reds{
+    color: red;
+}

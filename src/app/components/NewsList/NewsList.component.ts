@@ -1,21 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  concatMap,
-  delayWhen,
-  interval,
-  map,
-  Observable,
-  of,
-  take,
-  timer,
-} from 'rxjs';
-import { GetDannieService } from './servises/GetDannie.service';
+import { interval, Observable } from 'rxjs';
+import { GetDannieService } from 'src/app/servises/GetDannie.service';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-NewsList',
+  templateUrl: './NewsList.component.html',
+  styleUrls: ['./NewsList.component.css']
 })
-export class AppComponent implements OnInit {
+export class NewsListComponent implements OnInit {
+
   constructor(private GetDannieService: GetDannieService) {}
   NewsListTimer$?: Observable<number>;
   NewsList: any;
